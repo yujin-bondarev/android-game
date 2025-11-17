@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light"
+    tools:context=".StrtScreenActivity">
+
+    <TextView
+        android:id="@+id/textHeader"
+        style="@style/TitleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Крестики-нолики"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnWithAI"
+        style="@style/MenuButton"
+        android:text="Играть с ИИ"
+        app:layout_constraintTop_toBottomOf="@id/textHeader"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnWithFrnd"
+        style="@style/MenuButton"
+        android:text="Играть с другом"
+        app:layout_constraintTop_toBottomOf="@id/btnWithAI"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnContin"
+        style="@style/MenuButton"
+        android:text="Продолжить игру"
+        app:layout_constraintTop_toBottomOf="@id/btnWithFrnd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAbout"
+        style="@style/MenuButton"
+        android:text="Об авторе"
+        app:layout_constraintTop_toBottomOf="@id/btnContin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnFeedback"
+        style="@style/MenuButton"
+        android:text="Обратная связь"
+        app:layout_constraintTop_toBottomOf="@id/btnAbout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="180dp"
+        android:layout_height="2dp"
+        android:background="#D0D2E0"
+        app:layout_constraintTop_toBottomOf="@id/btnFeedback"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/textStatsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Статистика:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/textWins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Победы:"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        app:layout_constraintTop_toBottomOf="@id/textStatsTitle"
+        app:layout_constraintStart_toStartOf="@id/textStatsTitle"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/wins_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        app:layout_constraintBaseline_toBaselineOf="@id/textWins"
+        app:layout_constraintStart_toEndOf="@id/textWins"
+        android:layout_marginStart="8dp"/>
+
+    <TextView
+        android:id="@+id/textLoses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Поражения:"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        app:layout_constraintTop_toBottomOf="@id/textWins"
+        app:layout_constraintStart_toStartOf="@id/textWins"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/loses_val"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        app:layout_constraintBaseline_toBaselineOf="@id/textLoses"
+        app:layout_constraintStart_toEndOf="@id/textLoses"
+        android:layout_marginStart="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

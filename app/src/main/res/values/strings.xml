@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">laba4</string>
+    <!-- стартовый экран -->
+    <string name="headerStart">Главное меню</string>
+    <string name="btnWithAI_txt">Против ИИ</string>
+    <string name="btnWithFrnd_txt">Против друга</string>
+    <string name="btnContin_txt">Продолжить игру</string>
+    <string name="btnAbout_txt">О нас</string>
+    <string name="btnFeedback_txt">Обратная связь</string>
+    <string name="wins_txt">Победы:</string>
+    <string name="loses_txt">Поражения:</string>
+
+
+</resources>

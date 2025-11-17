@@ -1,0 +1,8 @@
+<resources>
+    <color name="purple_500">#5B6EE1</color>
+    <color name="background_light">#F7F8FA</color>
+    <color name="accent_pink">#FF6F61</color>
+    <color name="game_cell_default_bg">#6C8AF2</color>
+    <color name="game_cell_dark_bg">#4A6BCC</color>
+    <color name="win_color">@android:color/holo_green_dark</color>
+</resources>
